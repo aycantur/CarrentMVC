@@ -1,0 +1,81 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\WebProgramlama\\WebFormTest1\\WebApplication1\\CarRental\\wwwroot\\1-1-guvenli-arac-kiralama_203.jpeg",
+      "PackagePath": "staticwebassets\\1-1-guvenli-arac-kiralama_203.jpeg"
+    },
+    {
+      "Id": "C:\\WebProgramlama\\WebFormTest1\\WebApplication1\\CarRental\\wwwroot\\547db1a1449699de246701841193aebb.gif",
+      "PackagePath": "staticwebassets\\547db1a1449699de246701841193aebb.gif"
+    },
+    {
+      "Id": "C:\\WebProgramlama\\WebFormTest1\\WebApplication1\\CarRental\\wwwroot\\CarType.jpg",
+      "PackagePath": "staticwebassets\\CarType.jpg"
+    },
+    {
+      "Id": "C:\\WebProgramlama\\WebFormTest1\\WebApplication1\\CarRental\\wwwroot\\aa.png",
+      "PackagePath": "staticwebassets\\aa.png"
+    },
+    {
+      "Id": "C:\\WebProgramlama\\WebFormTest1\\WebApplication1\\CarRental\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\WebProgramlama\\WebFormTest1\\WebApplication1\\CarRental\\wwwroot\\front-view-generic-brandless-moder-car-1500x500.jpg",
+      "PackagePath": "staticwebassets\\front-view-generic-brandless-moder-car-1500x500.jpg"
+    },
+    {
+      "Id": "C:\\WebProgramlama\\WebFormTest1\\WebApplication1\\CarRental\\wwwroot\\homepage.ico",
+      "PackagePath": "staticwebassets\\homepage.ico"
+    },
+    {
+      "Id": "C:\\WebProgramlama\\WebFormTest1\\WebApplication1\\CarRental\\wwwroot\\images (1).jpg",
+      "PackagePath": "staticwebassets\\images (1).jpg"
+    },
+    {
+      "Id": "C:\\WebProgramlama\\WebFormTest1\\WebApplication1\\CarRental\\wwwroot\\images (3).jpg",
+      "PackagePath": "staticwebassets\\images (3).jpg"
+    },
+    {
+      "Id": "C:\\WebProgramlama\\WebFormTest1\\WebApplication1\\CarRental\\wwwroot\\images.jpg",
+      "PackagePath": "staticwebassets\\images.jpg"
+    },
+    {
+      "Id": "C:\\WebProgramlama\\WebFormTest1\\WebApplication1\\CarRental\\wwwroot\\images\\aa.jpg",
+      "PackagePath": "staticwebassets\\images\\aa.jpg"
+    },
+    {
+      "Id": "C:\\WebProgramlama\\WebFormTest1\\WebApplication1\\CarRental\\wwwroot\\images\\images3.jpg",
+      "PackagePath": "staticwebassets\\images\\images3.jpg"
+    },
+    {
+      "Id": "C:\\WebProgramlama\\WebFormTest1\\WebApplication1\\CarRental\\wwwroot\\nolan-standifer-hlHbPCp05jo-unsplash.jpg",
+      "PackagePath": "staticwebassets\\nolan-standifer-hlHbPCp05jo-unsplash.jpg"
+    },
+    {
+      "Id": "C:\\WebProgramlama\\WebFormTest1\\WebApplication1\\CarRental\\wwwroot\\reservationpage.jpg",
+      "PackagePath": "staticwebassets\\reservationpage.jpg"
+    },
+    {
+      "Id": "C:\\WebProgramlama\\WebFormTest1\\WebApplication1\\CarRental\\wwwroot\\useradd.jpg",
+      "PackagePath": "staticwebassets\\useradd.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.CarRental.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.CarRental.props",
+      "PackagePath": "build\\CarRental.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.CarRental.props",
+      "PackagePath": "buildMultiTargeting\\CarRental.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.CarRental.props",
+      "PackagePath": "buildTransitive\\CarRental.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,89 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CarRental
+build_property.RootNamespace = CarRental
+build_property.ProjectDir = C:\Programlama\WebProgramlama\WebFormTest1\WebApplication1\CarRental\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Programlama\WebProgramlama\WebFormTest1\WebApplication1\CarRental
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Programlama/WebProgramlama/WebFormTest1/WebApplication1/CarRental/Views/CarPar/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyUGFyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Programlama/WebProgramlama/WebFormTest1/WebApplication1/CarRental/Views/CarPar/Insert.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyUGFyXEluc2VydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Programlama/WebProgramlama/WebFormTest1/WebApplication1/CarRental/Views/CarPar/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyUGFyXFVwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Programlama/WebProgramlama/WebFormTest1/WebApplication1/CarRental/Views/CarReservation/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyUmVzZXJ2YXRpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Programlama/WebProgramlama/WebFormTest1/WebApplication1/CarRental/Views/CarReservation/InsertReservation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyUmVzZXJ2YXRpb25cSW5zZXJ0UmVzZXJ2YXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Programlama/WebProgramlama/WebFormTest1/WebApplication1/CarRental/Views/Cars/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Programlama/WebProgramlama/WebFormTest1/WebApplication1/CarRental/Views/Cars/Insert.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xJbnNlcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Programlama/WebProgramlama/WebFormTest1/WebApplication1/CarRental/Views/Cars/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xVcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Programlama/WebProgramlama/WebFormTest1/WebApplication1/CarRental/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Programlama/WebProgramlama/WebFormTest1/WebApplication1/CarRental/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Programlama/WebProgramlama/WebFormTest1/WebApplication1/CarRental/Views/Shared/_Layoutuser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXR1c2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Programlama/WebProgramlama/WebFormTest1/WebApplication1/CarRental/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Programlama/WebProgramlama/WebFormTest1/WebApplication1/CarRental/Views/Users/InsertUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5zZXJ0VXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Programlama/WebProgramlama/WebFormTest1/WebApplication1/CarRental/Views/Users/RoleIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcUm9sZUluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Programlama/WebProgramlama/WebFormTest1/WebApplication1/CarRental/Views/Users/RoleInsert.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcUm9sZUluc2VydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Programlama/WebProgramlama/WebFormTest1/WebApplication1/CarRental/Views/Users/RoleUpdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcUm9sZVVwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Programlama/WebProgramlama/WebFormTest1/WebApplication1/CarRental/Views/Users/UserUpdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcVXNlclVwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Programlama/WebProgramlama/WebFormTest1/WebApplication1/CarRental/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
