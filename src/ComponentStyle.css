@@ -1,0 +1,7 @@
+.component-container {
+    background-image: url('./unnamed.jpg'); /* Resmin dosya yolu */
+    background-size: contain; /* Resmi kaplama özelliği */
+    background-repeat: no-repeat; /* Tekrar etmemesi */
+    height: 1200px; /* Bileşen yüksekliği */
+    background-color: rgba(255, 255, 255, 0.5);
+  }

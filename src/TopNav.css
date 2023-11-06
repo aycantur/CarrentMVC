@@ -1,0 +1,19 @@
+.top-nav {
+    background-color: #595454;
+    display: flex;
+    justify-content: space-around;
+    padding: 6px 0;
+  }
+  
+  .nav-item {
+    color: #fff;
+    text-decoration: dotted;
+    margin: 0 10px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-item:hover {
+    background-color: #555;
+  }
