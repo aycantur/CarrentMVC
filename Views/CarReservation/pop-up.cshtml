@@ -1,0 +1,45 @@
+﻿@model Popup
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div id="dialog-modal" title="Basic modal dialog">
+
+<script type="text/javascript">
+
+        $(function () {
+            $('#dialog-modal').dialog({
+                autoOpen: false,
+                widht: 300,
+                height: 250,
+                show: {
+                    effect: "blind",
+                    duration: 1000
+                },
+                hide: {
+                    effect: "explode",
+                    duration: 1000
+                }
+            });
+            //modal-openner butonun ID'si, bu butona tıklandığında olacakları yazıyoruz.
+            $('#modal-openner').click(function () {
+                //Butona tıklandığında #dialog-modal ID'li kısmı popup olarak aç diyoruz.
+                $('#dialog-modal').dialog('open');
+            });
+        });
+
+    function onSuccessAjax(@Model) {
+        //Tamama basıldığında #dialog-modal kapatılıyor.
+        $('#dialog-modal').dialog('close');
+
+        //Json'dan dönen mesaj trueysa falsesa yapılacakları yazıyorum.
+            if (@Model.IsSuccess== false) {
+                alert(result.JsonMessage);
+            }
+            else {
+                alert(result.JsonMessage);
+        }
+        //-
+        }
+</script>

@@ -1,0 +1,55 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layoutuser.cshtml";
+}
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model Users
+
+<div>
+    <h3>Kullanıcı Oluştur</h3>
+
+    <form asp-controller="Users" asp-action="InsertUserContent" method="post">
+        <div class="row">
+            <div class="col-sm-6">
+                <label asp-for="@Model.CitizenShipNumber">TCKN</label>
+
+
+                <input asp-for="@Model.CitizenShipNumber" class="form-control" required />
+
+
+                <label asp-for="@Model.Name">Ad</label>
+
+
+                <input asp-for="@Model.Name" class="form-control" required />
+
+                <label asp-for="@Model.Scondname">İkinci Ad</label>
+
+
+                <input asp-for="@Model.Scondname" class="form-control" />
+
+                <label asp-for="@Model.Lastname">Soyad</label>
+
+
+                <input asp-for="@Model.Lastname" class="form-control" required />
+
+                <label asp-for="@Model.Birthdate">Doğum Tarihi</label>
+
+                <input asp-for="@Model.Birthdate" class="form-control" type="date" required />
+                <label asp-for="@Model.Password">Parola</label>
+                <input asp-for="@Model.Password" class="form-control" required />
+                <label asp-for="@Model.RoleType">Rol</label>
+                <select asp-for="@Model.RoleType" class="form-control">
+                    @foreach (var item in Model.usersRoleTypes)
+                    {
+                        <option value=@item.Id>@item.Name</option>
+                    }
+                </select>
+                <br />
+                <button type="submit" class="btn btn-secondary">Ekle</button>
+            </div>
+            <div class="col-sm-6">
+                <img src="~/useradd.jpg" alt="User Add">
+
+            </div>
+    </form>
+</div>

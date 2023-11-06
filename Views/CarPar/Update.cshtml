@@ -1,0 +1,25 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model CarPar
+
+@if (Model.Id != 0)
+{
+    <div>
+        <h3>Araç Türünü Güncelle</h3>
+        <form asp-controller="CarPar" asp-action="UpdateContent" method="post">
+            <div class="row">
+
+                <div class="col-sm-6">
+                    <label asp-for="@Model.Name"></label>
+                    <input value="@Model.Name" asp-for="@Model.Name" class="form-control" required />
+                    <input type="hidden" value="@Model.Id" asp-for="@Model.Id" class="form-control" />
+                    <input type="hidden" value="@Model.Type" asp-for="@Model.Type" class="form-control" />
+                    <button type="submit" class="btn btn-secondary">Güncelle</button>
+                </div>
+                <div class="col-sm-6">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/cylinder-1-1555358422.gif?resize=640:*" alt="Engine" title="Engine" width="800" height="450" decoding="async" fetchpriority="high" sizes="100vw">
+                </div>
+        </form>
+    </div>
+}

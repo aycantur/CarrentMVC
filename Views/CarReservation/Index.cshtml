@@ -1,0 +1,79 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model List<ReservationIn>
+
+<div>
+
+    <div class="row">
+
+        <button onclick="window.location.href='https://localhost:7158/CarReservation/InsertReservation'" type="button" class="btn btn-secondary"> Araç Rezervasyonu Oluştur</button>
+
+
+
+    </div>
+
+
+
+    <h3 style="text-align:center"><strong>Ara&ccedil; Rezervasyon Listesi</strong></h3>
+
+
+
+   
+    <table class="table  table-bordered table-striped" id="reservationTable">
+        <thead style="background-color:black;color:whitesmoke ;font:600;align-content:center ">
+            <tr style="font-weight:bold;align-content:center;color:whitesmoke;background-color:black">
+                <td>Kullanıcı TCKN</td>
+                <td>Kullanıcı Adı</td>
+                <td>Araç Adı</td>
+                <td>Araç Türü</td>
+                <td>Motor Türü</td>
+                <td>Günlük Ücret</td>
+                <td>Toplam Ücret</td>
+                <td>Rezervasyon Başlangıç</td>
+                <td>Rezervasyon Bitiş</td>
+                <td>Rezervasyon Tarihi</td>
+                <td>İşlem</td>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model is not null)
+            {
+                @foreach (var item in Model)
+                {
+                    <tr class="table-active">
+                        <td>@item.users.Where(x=>x.Id==item.UserId).Select(x=>x.CitizenShipNumber).First()</td>
+                        <td>@item.users.Where(x=>x.Id==item.UserId).Select(x=>x.Name).First() @item.users.Where(x=>x.Id==item.UserId).Select(x=>x.Lastname).First()</td>
+                        <td>@item.Cars.Where(x=>x.Id==item.CarId).Select(x=>x.Name).First() @item.Cars.Where(x=>x.Id==item.CarId).Select(x=>x.EngineVolume).First()</td>
+                        <td>@item.carPars.Select(x=>x.Name).First() </td>
+                        <td>@item.carparengine.Select(x=>x.Name).First() </td>
+                        <td>@item.Cars.Where(x=>x.Id==item.CarId).Select(x=>x.Price).First() TL</td>
+                        <td>@item.Price TL</td>
+                        <td>@item.ReservationStartDate</td>
+                        <td>@item.ReservationEndDate</td>
+                        <td>@item.RecordDate</td>
+                        <td>
+                            <a class="btn btn-link" asp-action="UpdateReservation" asp-controller="CarReservation" asp-route-id=@item.Id>Güncelle</a>
+                            <a class="btn btn-link" asp-action="CancelReservation" asp-controller="CarReservation" asp-route-id=@item.Id onclick="return confirm ('Rezervasyonu iptal etmeye emin misiniz?')">İptal Et</a>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css">
+
+    <!-- DataTables JavaScript -->
+    <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#reservationTable').DataTable();
+        });
+    </script>
+</div>

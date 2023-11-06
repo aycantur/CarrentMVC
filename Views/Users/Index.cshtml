@@ -1,0 +1,54 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layoutuser.cshtml";
+}
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model List<Users>
+
+<div>
+    <div class="row">
+
+        <button onclick="window.location.href='https://localhost:7158/Users/InsertUser'" type="button" class="btn btn-secondary"> Kullanıcı Oluştur</button>
+
+
+
+    </div>
+
+    <h3 style="text-align:center"><strong>Kullanıcı Listesi</strong></h3>
+    <table class="table table-light table-bordered table-striped">
+        <thead>
+            <tr>
+                <td>CitizenShipNumber</td>
+                <td>Name</td>
+                <td>Secondname</td>
+                <td>Lastname</td>
+                <td>Birthdate</td>
+                <td>usersRoleTypes</td>
+                <td>İşlem</td>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model is not null)
+            {
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.CitizenShipNumber</td>
+                        <td>@item.Name</td>
+                        <td>@item.Scondname</td>
+                        <td>@item.Lastname</td>
+                        <td>@item.Birthdate</td>
+                        <td>@item.usersRoleTypes.Select(x=>x.Name).FirstOrDefault()</td>
+                        <td>
+                            <a class="btn btn-link" asp-action="UserUpdate" asp-controller="Users" asp-route-id=@item.Id>Düzelt</a>
+                            <a class="btn btn-link" asp-action="UserDelete" asp-controller="Users" asp-route-id=@item.Id onclick="return confirm ('Kullanıcıyı pasife çekmeye emin misiniz?')">Pasife Çek</a>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+    
+
+
+</div>

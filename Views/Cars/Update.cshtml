@@ -1,0 +1,48 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model CarsList
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@if (Model.Id != 0)
+{
+    <div>
+        <h3>Araç Tanımını Güncelle</h3>
+        <form asp-controller="Cars" asp-action="UpdateContent" method="post">
+            <div class="row">
+                <div class="col-sm-6">
+                    <input type="hidden" value="@Model.Id" asp-for="@Model.Id" class="form-control" />
+                    <label asp-for="@Model.Name"></label>
+                    <input value="@Model.Name" asp-for="@Model.Name" class="form-control" required />
+                    <label asp-for="@Model.CarType"></label>
+                    <select asp-for="@Model.CarType" class="form-control">
+                        @foreach (var item in Model.carParsType)
+                        {
+                            <option value=@item.Id>@item.Name</option>
+                        }
+
+                    </select>
+                    <label asp-for="@Model.EngineType"></label>
+                    <select asp-for="@Model.EngineType" class="form-control">
+                        @foreach (var item in Model.carParsEngineType)
+                        {
+                            <option value=@item.Id>@item.Name</option>
+                        }
+                    </select>
+                    <label asp-for="@Model.EngineVolume"></label>
+                    <input asp-for="@Model.EngineVolume" class="form-control" required />
+                    <label asp-for="@Model.Price"></label>
+                    <input asp-for="@Model.Price" class="form-control" required />
+                    <br />
+                    <button type="submit" class="btn btn-secondary">Güncelle</button>
+                </div>
+
+                <div class="col-sm-6">
+                    <img style="height: 500px;" src="~/nolan-standifer-hlHbPCp05jo-unsplash.jpg" alt="Araç Kiralama">
+
+                </div>
+            </div>
+        </form>
+
+
+    </div>
+}

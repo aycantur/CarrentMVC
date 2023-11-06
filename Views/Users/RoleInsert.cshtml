@@ -1,0 +1,23 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layoutuser.cshtml";
+}
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model UsersRoleType
+
+<div>
+    <h3>Rol Tanımı</h3>
+    <form asp-controller="Users" asp-action="InsertRoleContent" method="post">
+        <div class="row">
+            <div class="col-sm-3">
+                <label asp-for="@Model.Name"></label>
+
+            
+                <input asp-for="@Model.Name" class="form-control" required />
+                
+            
+                <button type="submit" class="btn btn-secondary">Ekle</button>
+            </div>
+        </div>
+    </form>
+</div>

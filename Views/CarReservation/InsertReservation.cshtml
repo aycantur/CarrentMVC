@@ -1,0 +1,59 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model ReservationIn
+@using CarRental.Controllers
+@using CarRental.Data.Context
+@using CarRental.Data.Repository
+
+
+
+
+<div>
+    <h3>Araç Rezervasyonu</h3>
+    <form asp-controller="CarReservation" asp-action="InsertReservationContent" method="post">
+        <div class="row">
+            <div class="col-sm-6">
+                <label style="font-weight:bold" asp-for="@Model.UserId">Kullanıcı Adı Soyadı</label>
+                <select asp-for="@Model.UserId" class="form-control" size="1">
+
+                    @foreach (var item in Model.users)
+                    {
+                        <option value=@item.Id>@item.Name @item.Lastname</option>
+                    }
+                </select>
+                <label asp-for="@Model.CarId" style="font-weight:bold">Araç</label>
+                <select asp-for="@Model.CarId" class="form-control" size="1" onclick="showCarImage">
+                    @foreach (var item in Model.Carlist)
+                    {
+                        <option value=@item.Id>@item.Name @item.EngineTypeName @item.CarTypeName @item.EngineVolume </option>
+                    }
+                </select>
+                <label style="font-weight:bold" asp-for="@Model.ReservationStartDate">Rezervasyon Başlangıç Tarihi</label>
+                <input value="datetime.now" asp-for="@Model.ReservationStartDate" class="form-control" required />
+                <label style="font-weight:bold" asp-for="@Model.ReservationEndDate">Rezervasyon Bitiş Tarihi</label>
+                <input value="datetime.now" asp-for="@Model.ReservationEndDate" class="form-control" required />
+                <button type="submit" class="btn btn-secondary">Rezervasyon Oluştur</button>
+            </div>
+            <div class="col-sm-6">
+                <img width="900" height="400" src="~/reservationpage.jpg" alt="Resim Açıklaması">
+            </div>
+
+        </div>
+        <br />
+        <img width="1900" height="500" src="~/front-view-generic-brandless-moder-car-1500x500.jpg" alt="Resim Açıklaması">
+
+
+
+        @*        <div>
+        <button type="button" itemid="btnControl" class="btn btn-primary" onclick=@suitable(Model)>Kontrol</button>
+        @ViewBag.Alert
+        </div>*@
+
+
+
+    </form>
+
+
+</div>

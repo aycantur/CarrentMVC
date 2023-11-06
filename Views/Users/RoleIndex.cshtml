@@ -1,0 +1,44 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layoutuser.cshtml";
+}
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model List<UsersRoleType>
+
+<div>
+    <div class="row">
+
+        <button onclick="window.location.href='https://localhost:7158/Users/RoleInsert'" type="button" class="btn btn-secondary"> Rol Oluştur</button>
+
+
+
+    </div>
+
+    <h3 style="text-align:center"><strong>Rol Listesi</strong></h3>
+    <table class="table table-light table-bordered table-striped">
+        <thead>
+            <tr>
+                <td>Rol Adı</td>
+                <td>İşlem</td>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model is not null)
+            {
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Name</td>
+                        <td>
+                            <a class="btn btn-link" asp-action="RoleUpdate" asp-controller="Users" asp-route-id=@item.Id>Düzelt</a>
+                            <a class="btn btn-link" asp-action="RoleDelete" asp-controller="Users" asp-route-id=@item.Id>Sil</a>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+
+
+
+</div>

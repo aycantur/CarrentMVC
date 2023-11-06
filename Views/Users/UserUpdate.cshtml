@@ -1,0 +1,45 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layoutuser.cshtml";
+}
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model Users
+@if (Model.Id != 0)
+{
+    <div>
+        <h3>Kullanıcı Güncelleme</h3>
+
+        <form asp-controller="Users" asp-action="UpdateUserContent" method="post">
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <label asp-for="@Model.CitizenShipNumber">TCKN</label>
+                    <input value="@Model.Id" asp-for="@Model.Id" class="form-control" type="hidden" />
+                    <input value="@Model.CitizenShipNumber" asp-for="@Model.CitizenShipNumber" class="form-control" readonly/>
+                    <label asp-for="@Model.Name">Ad</label>
+                    <input value="@Model.Name" asp-for="@Model.Name" class="form-control" required />
+                    <label asp-for="@Model.Scondname">İkinci Ad</label>
+                    <input value="@Model.Scondname" asp-for="@Model.Scondname" class="form-control" />
+                    <label asp-for="@Model.Lastname">Soyad</label>
+                    <input value="@Model.Lastname" asp-for="@Model.Lastname" class="form-control" required />
+                    <label asp-for="@Model.Birthdate">Doğum Tarihi</label>
+                    <input value="@Model.Birthdate" asp-for="@Model.Birthdate" class="form-control" type="datetime" required />
+                    <label asp-for="@Model.Password">Parola</label>
+                    <input value="@Model.Password" asp-for="@Model.Password" class="form-control" type="password" required />
+                    <label asp-for="@Model.RoleType">Rol</label>
+                    <select value="@Model.RoleType" asp-for="@Model.RoleType" class="form-control">
+                        @foreach (var item in Model.usersRoleTypes)
+                        {
+                            <option value=@item.Id>@item.Name</option>
+                        }
+                    </select>
+                    <button type="submit" class="btn btn-secondary">Güncelle</button>
+                </div>
+                <div class="col-sm-6">
+                    <img src="~/useradd.jpg" alt="Araç Kiralama">
+
+                </div>
+            </div>
+        </form>
+    </div>
+}
